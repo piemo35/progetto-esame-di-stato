@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/ /* il padding non fa allargare il div, ma ricava spazio al suo interno*/
+    scroll-behavior: smooth;
+}
+:root {
+    --white: #F4F4F4;
+}
+body{
+    font-family: 'Lora', serif;
+}
+
+p, a, h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+
+
+
+
+/* login form */
+
+.login-main{
+    background-color: #ffffff;
+    padding-bottom: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-image: linear-gradient(to bottom right, #E4E4E4 , #FFFFFF);
+    display: flex;
+    flex-flow: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 100px;
+    border-radius: 10px;
+    border: 1px solid #94949B;
+    box-shadow:  4px 4px 10px #BBBBBB,  -4px -4px 10px #BBBBBB;
+}
+
+.title {
+    border: 0;
+    outline: 0;
+    /*text-shadow: 5px 5px 5px #1C1C1C;*/
+    color: #545454;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+
+::placeholder{ color: grey; }
+
+input{
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #94949B;
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+
+/*input:hover { box-shadow:  3px 3px 10px #BBBBBB,  -3px -3px 10px #BBBBBB; !important;}
+input:focus { box-shadow:  inset 2px 2px 5px #040404, inset -2px -2px 5px #343434;}*/
+
+.div-radio{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.div-admin-statistiche-interventi{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-calcolo-media{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+.div-calcolo-media > p{
+    font-size: 14px;
+}
+
+
+/*textarea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    outline: 0;
+    border-radius: 6px;
+    background-color: var(--white);
+    width: 90%;
+    padding: 15px;
+    color: var(--blue);
+
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+    transition: all 150ms ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+}
+textarea:hover { box-shadow:  2px 2px 6px #040404,  -2px -2px 6px #343434; !important;}
+textarea:focus { box-shadow:  inset 2px 2px 3px #040404, inset -2px -2px 3px #343434;}
+*/
+
+.main-ticket-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ticket-info{
+    border-top: 2px solid black;
+    padding: 50px;
+    flex-basis: 75%;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sendButton{
+    border: 1px solid #94949B;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.Button{
+    margin-top: 30px;
+    border: 1px solid #94949B;
+    width: 30%;
+    background-color: #FFFFFF;
+}
+.reportButton{
+    margin-bottom: 0; !important;
+}
+/*.sendButton:hover{ box-shadow:  2px 2px 5px #040404,  -2px -2px 5px #343434;}
+.sendButton:focus{ box-shadow:  inset 2px 2px 3px #040404, inset -2px -2px 3px #343434; !important;}*/
+
+
+.registratiButton{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+
+/******************************* dashboard customer *********************************/
+
+.div-openTicket,.div-seeTicket{
+    border: 3px solid black;
+    flex-basis: 33%;
+    padding: 90px;
+}
+.div-openTicket > h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.div-seeTicket > h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.logo-dashboardCustomer{
+    flex-basis: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.img-logo{
+    padding: 70px;
+    flex-basis: 15%;
+}
+.mainDiv-dashboardCustomer{
+    border-top: 3px solid black;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.mainDiv-dashboardEmployee{
+    border-top: 3px solid black;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
+
+
+.tab{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/******************************* navbar *********************************/
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    /*align-items: center;*/
+}
+.navbar-items{
+    padding: 15px;
+}
+.navbar-items > a{
+    /*display: inline-block;*/
+    text-decoration: none;
+    color: black;
+}
+.navbar-items:hover > a{
+    color: cornflowerblue;
+    transition: 0.35s;
+}
+
+
+/******************************* dashboard employee *********************************/
